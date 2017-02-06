@@ -1,0 +1,25 @@
+  <form #prefForm="ngForm" (ngSubmit)="setPreferences(prefForm.value)">
+    <label>
+      Enter bus stop number or name:<br/>
+      <input type="text" name="stop" ngModel><br/><br/>
+    </label>
+
+    <label>
+      Name:<br/>
+      <input type="text" name="name" ngModel><br/><br/>
+    </label>
+
+    <label>
+      Address:<br/>
+      <input type="text" name="address" ngModel><br/><br/>
+    </label>
+
+    <label>
+      Phone number:<br/>
+      <input type="text" name="phone" ngModel><br/><br/>
+    </label>
+
+    <button (click)="setStop()">Set stop</button>
+    <button type="reset">Clear</button><br/>
+    <button (click)="removePreferences">Delete favourites</button>
+  </form>
