@@ -11,6 +11,8 @@ export class SetupComponent implements OnInit {
 
   // private stop: any = '';
   private user: any = {};
+  private key: string = 'AIzaSyAaVlk-f6R2-kbzTaicEszDh82kghPOEwM';
+  private url: string = `https://www.google.com/maps/embed/v1/place?key=${this.key}&q=Mannerheimintie`;
 
   constructor(private digitransitService: DigitransitService, private router: Router) {
   }

@@ -9,6 +9,7 @@ import { SetupComponent } from './setup/setup.component';
 import { RoutesComponent } from './routes/routes.component';
 import { RouterModule } from "@angular/router";
 import { DigitransitService } from "./services/digitransit.service";
+import { SafePipe } from './pipes/safe.pipe';
 
 const routeConfig = [
   {
@@ -31,7 +32,8 @@ const routeConfig = [
     AppComponent,
     TopBarComponent,
     SetupComponent,
-    RoutesComponent
+    RoutesComponent,
+    SafePipe,
   ],
   imports: [
     BrowserModule,

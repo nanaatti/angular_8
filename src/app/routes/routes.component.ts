@@ -8,10 +8,14 @@ import {Router} from "@angular/router";
   templateUrl: './routes.component.html',
   styleUrls: ['./routes.component.scss']
 })
+
 export class RoutesComponent implements OnInit {
 
   private routes: any = [];
-  private user: any = [];
+  private user: any = {};
+  private key: string = 'AIzaSyAaVlk-f6R2-kbzTaicEszDh82kghPOEwM';
+  private url: string = `https://www.google.com/maps/embed/v1/place?key=${this.key}&q=Mannerheimintie`;
+  private time: any = Date.now();
 
   constructor(private digitransitService: DigitransitService, private router: Router) {
   }
@@ -45,12 +49,13 @@ export class RoutesComponent implements OnInit {
         try {
           const lat = resp[Object.keys(resp)[0]].VP.lat;
           const lon = resp[Object.keys(resp)[0]].VP.long;
-          window.open(`https://maps.google.fi/maps/place/${lat}+${lon}`);
+          this.time = resp[Object.keys(resp)[0]].VP.tst;
+          //window.open(`https://maps.google.fi/maps/place/${lat}+${lon}`);
+          this.url = `https://www.google.com/maps/embed/v1/place?key=${this.key}&q=${lat},${lon}`;
         } catch (e) {
           alert('Not in transit.');
         }
       }
     )
   };
-
 }
