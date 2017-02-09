@@ -1,8 +1,6 @@
 <<<<<<< HEAD
-# angular_8
-# angular_8
 =======
-# Week4t7
+# Week4t8
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.21.
 
