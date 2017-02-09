@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# angular_8
-# angular_8
-=======
-# Week4t7
+# Week4t8
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.21.
 
@@ -33,4 +29,4 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
->>>>>>> e84c100fd03ae5f966bf3748d4e628d25b04adc0
+e84c100fd03ae5f966bf3748d4e628d25b04adc0
