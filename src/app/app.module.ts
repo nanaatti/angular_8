@@ -10,6 +10,7 @@ import { RoutesComponent } from './routes/routes.component';
 import { RouterModule } from "@angular/router";
 import { DigitransitService } from "./services/digitransit.service";
 import { SafePipe } from './pipes/safe.pipe';
+import { SulkeetPipe } from './pipes/sulkeet.pipe';
 
 const routeConfig = [
   {
@@ -34,6 +35,7 @@ const routeConfig = [
     SetupComponent,
     RoutesComponent,
     SafePipe,
+    SulkeetPipe,
   ],
   imports: [
     BrowserModule,
